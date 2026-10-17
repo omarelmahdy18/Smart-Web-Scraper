@@ -80,7 +80,5 @@ The compiled executable (`SmartWebScraper.exe`) will be placed inside the `dist/
 
 ---
 
-## 👨‍💻 Author
 
-**Omar Elmahdy - Data Engineer**
 
