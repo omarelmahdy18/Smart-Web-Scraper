@@ -1,0 +1,137 @@
+{
+  "paths": {
+    "input_csv": "D:\\Workspace\\Scarbbing\\needed_photos.csv",
+    "output_sample_csv": "C:\\Users\\omare\\Documents\\needed_photos_sample.csv",
+    "output_sources_csv": "C:\\Users\\omare\\Documents\\needed_photos_sources.csv",
+    "log_file": "D:\\Workspace\\Scarbbing\\scraper.log"
+  },
+  "scraper_settings": {
+    "pilot_limit": 25,
+    "request_delay_sec": 2.0,
+    "max_concurrent_tasks": 5,
+    "request_timeout_sec": 10,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 (Egyptian Beauty Catalog Matcher/2.0; Contact: catalog-pilot@internal)"
+  },
+  "store_registry": {
+    "source_beauty": {
+      "name": "Source Beauty Egypt",
+      "base_url": "https://sourcebeauty.com",
+      "search_type": "shopify_suggest",
+      "is_multibrand": true
+    },
+    "telofill": {
+      "name": "Telofill Official Store",
+      "base_url": "https://telofill.com",
+      "search_type": "shopify_suggest",
+      "brands": ["telofill"]
+    },
+    "eparkville": {
+      "name": "eParkville Official Store",
+      "base_url": "https://eparkville.com",
+      "search_type": "shopify_suggest",
+      "brands": ["starville", "strongville", "parkville"]
+    },
+    "avrelle": {
+      "name": "Avrelle Cosmetics Official",
+      "base_url": "https://avrellecosmetics.com",
+      "search_type": "shopify_suggest",
+      "brands": ["avrelle"]
+    },
+    "skinify": {
+      "name": "Skinify Official Store",
+      "base_url": "https://uskinify.com",
+      "search_type": "shopify_suggest",
+      "brands": ["skinify"]
+    },
+    "bobana": {
+      "name": "Bobana Official Store",
+      "base_url": "https://bobana-eg.com",
+      "search_type": "shopify_suggest",
+      "brands": ["bobana"]
+    },
+    "infinity": {
+      "name": "Infinity Clinic Pharma Official",
+      "base_url": "https://infinityclinicpharma.com",
+      "search_type": "shopify_suggest",
+      "brands": ["infinity"]
+    },
+    "monaya": {
+      "name": "Monaya Official Store",
+      "base_url": "https://monaya.shop",
+      "search_type": "shopify_suggest",
+      "brands": ["monaya"]
+    },
+    "coco": {
+      "name": "Coco Cosmetics Official",
+      "base_url": "https://coco-cosmetics.store",
+      "search_type": "shopify_suggest",
+      "brands": ["coco"]
+    }
+  },
+  "brand_synonyms": {
+    "avrelle": ["avrelle", "افريل", "أفريل"],
+    "bobana": ["bobana", "بوبانا"],
+    "telofill": ["telofill", "تيلوفيل"],
+    "starville": ["starville", "ستارفيل"],
+    "strongville": ["strongville", "سترونج فيل", "سترونجفيل"],
+    "skinify": ["skinify", "سكينيفاي"],
+    "infinity": ["infinity", "انفينيتي", "إنفينيتي"],
+    "monaya": ["monaya", "مونايا"],
+    "coco": ["coco", "كوكو"],
+    "starky": ["starky", "ستاركي"],
+    "dove": ["dove", "دوف"],
+    "roseberry": ["roseberry", "روز بيري", "روزبيري"],
+    "clary": ["clary", "كلاري"],
+    "eama": ["eama", "ايما", "إيما"]
+  },
+  "type_synonyms": {
+    "wax strips": ["wax strips", "شرائح شمع", "الشرائح الشمعية", "wax"],
+    "shampoo": ["shampoo", "شامبو"],
+    "conditioner": ["conditioner", "بلسم"],
+    "hair mask": ["hair mask", "ماسك شعر", "ماسك", "حمام كريم"],
+    "hair oil": ["hair oil", "زيت شعر", "oil"],
+    "leave in": ["leave in", "leave-in", "ليف ان"],
+    "face wash": ["face wash", "facial wash", "cleanser", "غسول"],
+    "cleanser": ["cleanser", "face wash", "facial wash", "غسول"],
+    "serum": ["serum", "سيروم"],
+    "eye cream": ["eye cream", "eye serum", "كريم عين"],
+    "eye serum": ["eye serum", "eye cream", "سيروم عين"],
+    "body milk": ["body milk", "بادي ميلك", "حليب للجسم"],
+    "body lotion": ["body lotion", "لوشن"],
+    "body scrub": ["body scrub", "scrub", "مقشر", "صنفرة"],
+    "body wash": ["body wash", "shower gel", "شاور جل"],
+    "micellar water": ["micellar water", "micellar", "ميسيلار"],
+    "makeup remover": ["makeup remover", "مزيل مكياج"],
+    "lip gloss": ["lip gloss", "gloss", "ملمع"],
+    "highlighter": ["highlighter", "هايلايتر"],
+    "toothbrush": ["toothbrush", "فرشاة اسنان"],
+    "brush": ["brush", "فرشاة"],
+    "stick": ["stick", "deodorant", "ستيك", "مزيل عرق"]
+  },
+  "critical_tokens": {
+    "dye": ["dye", "coloring", "صبغة"],
+    "mango": ["mango", "مانجو"],
+    "clean": ["clean"],
+    "retinol": ["retinol", "ريتينول"],
+    "peptides": ["peptide", "peptides", "ببتيد"],
+    "garlic": ["garlic", "ثوم"],
+    "shea": ["shea", "شيا"],
+    "argan": ["argan", "ارجان", "أرجان"],
+    "olive": ["olive", "زيتون"],
+    "rocca": ["rocca", "جرجير"],
+    "biotin": ["biotin", "بيوتين"],
+    "berry": ["berry", "توت"],
+    "honey": ["honey", "عسل"],
+    "biphasic": ["biphasic", "ثنائي"],
+    "whitening": ["whitening", "تفتيح"],
+    "collagen": ["collagen", "collage", "كولاجين"]
+  },
+  "bundle_terms": [
+    "bundle",
+    "set",
+    "pouch",
+    "مجموعة",
+    "عرض"
+  ]
+}
+
